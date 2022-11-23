@@ -1,0 +1,108 @@
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przemekkk</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- style -->
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="styleDesktop.css">
+</head>
+<body>
+    <main>
+        <menu>
+            <div id="me">
+                <img src="images/new-avatar-1080.png">
+                <h2>Przemekkk</h2>
+            </div>
+            <div id="links">
+                <button class="link" value='omnie' onclick="switch_card(this.value)"><h2>O mnie</h2></button>
+                <button class="link" value='projekty' onclick="switch_card(this.value)" disabled><h2>projekty</h2></button>
+                <button class="link" value='nwm' onclick="switch_card(this.value)"><h2>nwm coś</h2></button>
+                <button class="link" value='kontakt' onclick="switch_card(this.value)"><h2>kontakt</h2></button>
+            </div>
+            <footer>
+                <a href="https://github.com/PrzemekkkYT" target="_blank">
+                    <img src="images/github.png">
+                    <h4>Kod źródłowy tej strony</h4>
+                </a>
+                
+            </footer>
+        </menu>
+        <section>
+            <div id="section-card">
+                <div id="card-pack">
+                    <div id="omnie" class="card">
+                        <div class="card-content">
+                            <h1 class="title">O mnie</h1>
+                            <h2>
+                                Nazywam się Przemek i jestem uczniem ZSE w Bolesławcu.
+                                Aktualnie 4 klasa na kierunku technik informatyk.<br><br>
+                
+                                Interesuję się programowaniem, muzyką, grami,
+                                gotowaniem oraz oglądaniem filmów, seriali, oraz anime.<br><br>
+                
+                                W przeszłości próbowałem programować w językach jak:
+                                c++, c#, javascript, php, gdscript czy lua jednak to python
+                                przykuł moją uwagę i aktualnie skupiam się na rozwijaniu
+                                wiedzy i umiejętności z nim związanych.<br><br>
+                
+                                W wolnym czasie lubię grać w gry takie jak overwatch, ETS 2,<br>
+                                Scrap Mechanic, Minecraft, Subnautica i od czasu do czasu GTA V<br><br>
+                
+                                W Minecraft'cie oprócz zwykłego grania bardzo lubię tworzyć własne<br>
+                                paczki danych, które pozwalają zmieniać grę na swój własny sposób.
+                            </h2>
+                        </div>
+                    </div>
+                    <div id="projekty" class="card hidden">
+                        <div class="card-content">
+                            <h1 class="title">Projekty</h1>
+                            <div class="project-container">
+                                <a href="https://github.com/PrzemekkkYT/Vipper" target="_blank" class="project" id="project-vipper">
+                                    <h3>Vipper</h3>
+                                    <h4>Mój pierwszy większy projekt w pythonie. Jest to wielofunkcyjny bot na platformie discord.</h4>
+                                </a>
+                                <a href="https://github.com/PrzemekkkYT/mc-datapacks" target="_blank" class="project" id="project-datapacks">
+                                    <h3>MC Datapacks</h3>
+                                    <h4>Zbiór paczek danych ulepszających lekko rozgrywkę w grze Minecraft.</h4>
+                                </a>
+                                <a href="https://przemekkkyt.github.io/web-projects/keyboard-game/keyboard-game.html" target="_blank" class="project" id="project-sname">
+                                    <h3>'Snake'</h3>
+                                    <h5>Gra w javascripcie w zamyśle podobna do gry 'snake'. Różnica jest taka, że ta jest na czas, który się zmniejsza oraz gracznie zmienia rozmiaru.</h4>
+                                </a>
+                                <a href="http://przemekkk.prv.pl/" target="_blank" class="project" id="project-ipcalc">
+                                    <h3>Kalkulator IP/podsieci</h3>
+                                    <h5>2 kalkulatory: IP i podsieci. Pierwszy oblicza adres sieci i rozgłoszeniowy. Drugi dzieli podaną sieć na wybraną ilość podsieci.</h5>
+                                </a>
+                            </div>
+                            <p id="projects-tooltip" style="visibility: hidden;">Kliknięcie w kafelek otwiera nową kartę w przeglądarce</p>
+                        </div>
+                    </div>
+                    <div id="nwm" class="card hidden">
+                        <div class="card-content">
+                            <h1 class="title">Work in progress</h1>
+                            <video autoplay muted loop>
+                                <source src="WIP.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div id="kontakt" class="card hidden">
+                        <div class="card-content">
+                            <h1 class="title">Kontakt</h1>
+                            <h2>Kiedyś będzie, bo nie wiem jaki kontakt tu wpisać</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="content_menu.js"></script>
+    <script src="project_hover.js"></script>
+</body>
+</html>
