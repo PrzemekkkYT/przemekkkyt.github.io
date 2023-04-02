@@ -1,0 +1,40 @@
+@font-face{
+    font-family:"Font Awesome 6 Brands";
+    font-style:normal;
+    font-weight:400;
+    font-display:block;
+    src:url(https://ka-f.fontawesome.com/releases/v6.4.0/webfonts/free-fa-brands-400.woff2) format("woff2"),url(https://ka-f.fontawesome.com/releases/v6.4.0/webfonts/free-fa-brands-400.ttf) format("truetype")
+}
+
+@font-face{
+    font-family:"Font Awesome 6 Free";
+    font-style:normal;
+    font-weight:900;
+    font-display:block;
+    src:url(https://ka-f.fontawesome.com/releases/v6.4.0/webfonts/free-fa-solid-900.woff2) format("woff2"),url(https://ka-f.fontawesome.com/releases/v6.4.0/webfonts/free-fa-solid-900.ttf) format("truetype")
+}
+
+.fa-brands::before {
+    font-family:"Font Awesome 6 Brands";
+    margin-right: 1.5rem;
+}
+
+.icon-github::before {
+    content:"\f09b";
+}
+
+.icon-instagram::before{
+    content:"\f16d";
+}
+
+.icon-tiktok::before{
+    content:"\e07b";
+}
+
+.icon-youtube::before{
+    content:"\f167";
+}
+
+.icon-twitter::before {
+    content: "\f099";
+}

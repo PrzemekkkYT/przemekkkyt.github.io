@@ -59,7 +59,7 @@ menu > div {
     align-items: center;
 }
 
-menu > div > p {
+.menu_selector::before {
     font-weight: bold;
     font-size: 0.9rem;
 }
@@ -102,6 +102,22 @@ section {
     text-shadow: .12rem .1rem #000000;
 }
 
+#me::before {
+    content: "o mnie";
+}
+
+#projects::before {
+    content: "projekty";
+}
+
+#thoughts::before {
+    content: "przemyślenia";
+}
+
+#socials::before {
+    content: "społecznościowe";
+}
+
 #me_content > * {
     padding: 0.5rem;
     border-top: 0.1rem solid black;
@@ -141,12 +157,8 @@ section {
     color: #707070;
 }
 
-#me_footer img {width: 2vw;}
-#me_footer h4 {
-    padding-left: 5%;
-    font-size: 0.6rem;
-    
-}
+#me_footer img { width: 2vw; }
+#me_footer h4 { font-size: 0.8rem; }
 
 #projects_content {
     display: grid;
@@ -211,6 +223,10 @@ section {
     color: white;
 }
 
+.thought img {
+    height: 25vh;
+}
+
 #social_content {
     display: grid;
     max-height: 60vh;
@@ -229,11 +245,12 @@ section {
     /* height: 40vh; */
 }
 
-.social i {
-    line-height: normal;
-}
-
 .social p {
     margin-left: 0.5em;
     font-size: 1.5rem;
+}
+
+.social:nth-child(2) {
+    position: relative;
+    left: -0.7em;
 }

@@ -16,7 +16,7 @@ const genChild = (id, desc, img) => {
     if (!(typeof img === 'undefined' || img === null)) {
         let image = document.createElement("img");
         image.src = `images/thoughts/${img}`;
-        image.style.height = "25vh";
+        // image.style.height = "25vh";
         mainElement.appendChild(image);
     }
     // let descElement = document.createElement("p");
@@ -29,7 +29,7 @@ const genChild = (id, desc, img) => {
 }
 
 const fetchData = async () => {
-    return fetch("thoughts.json").then((response) => response.json());
+    return fetch("./thoughts.json").then((response) => response.json());
 }
 
 initThoughts();

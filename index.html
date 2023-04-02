@@ -12,9 +12,10 @@
       rel="stylesheet"
     />
     <!-- fontawesome icons -->
-    <script src="https://kit.fontawesome.com/e6574782bd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="icons.css">
     <!-- style -->
     <link rel="stylesheet" media="screen and (min-width: 768px)" href="styleDesktop.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="styleMobile.css">
     
 </head>
 <body>
@@ -49,37 +50,36 @@
         <div class="content" id="thoughts_content"></div>
         <div class="content" id="socials_content">
             <a href="https://www.youtube.com/c/PrzemekkkYT" target="_blank" class="social">
-                <i class="fa-brands fa-youtube fa-2xl"></i>
-                <p>PrzemekkkYT</p>
+                <p class="fa-brands icon-youtube">PrzemekkkYT</p>
             </a>
             <a href="https://www.tiktok.com/@przemekkkyt" target="_blank" class="social">
-                <i class="fa-brands fa-tiktok fa-2xl"></i>
-                <p>Przemekkk</p>
+                <p class="fa-brands icon-tiktok">Przemekkk</p>
             </a>
             <a href="https://www.instagram.com/przemekkkyt/" target="_blank" class="social">
-                <i class="fa-brands fa-instagram fa-2xl"></i>
-                <p>przemekkkyt</p>
+                <p  class="fa-brands icon-instagram">przemekkkyt</p>
             </a>
             <a href="https://github.com/PrzemekkkYT" target="_blank" class="social">
-                <i class="fa-brands fa-github fa-2xl"></i>
-                <p>PrzemekkkYT</p>
+                <p class="fa-brands icon-github">PrzemekkkYT</p>
+            </a>
+            <a href="https://twitter.com/Przemekkk_YT" target="_blank" class="social">
+                <p class="fa-brands icon-twitter">PrzemekkkYT</p>
             </a>
         </div>
     </div>
     
     <main>
         <menu>
-            <div class="menu_selector selected" id="me" onclick="switch_selected(this)">
-                <p>O mnie</p>
+            <div class="menu_selector selected" id="me" onclick="switchSelected(this)">
+                <!-- <p>O mnie</p> -->
             </div>
-            <div class="menu_selector" id="projects" onclick="switch_selected(this)">
-                <p>projekty</p>
+            <div class="menu_selector" id="projects" onclick="switchSelected(this)">
+                <!-- <p>projekty</p> -->
             </div>
-            <div class="menu_selector" id="thoughts" onclick="switch_selected(this)">
-                <p>przemyślenia</p>
+            <div class="menu_selector" id="thoughts" onclick="switchSelected(this)">
+                <!-- <p>przemyślenia</p> -->
             </div>
-            <div class="menu_selector" id="socials" onclick="switch_selected(this)">
-                <p>społecznościowe</p>
+            <div class="menu_selector" id="socials" onclick="switchSelected(this)">
+                <!-- <p>społecznościowe</p> -->
             </div>
         </menu>
         <section>
@@ -95,9 +95,8 @@
                 <p id="prog_langs">
                     Programuję głównie w języku python, chociaż zdarza mi się też czasem porobić coś w lua a także javascripcie.
                 </p>
-                <a id="me_footer" href="https://github.com/PrzemekkkYT/przemekkkyt.github.io" target="_blank">
-                    <i class="fa-brands fa-github" style="text-shadow: none;"></i>
-                    <h4>Kod źródłowy tej strony</h4>
+                <a class="fa-brands icon-github" id="me_footer" href="https://github.com/PrzemekkkYT/przemekkkyt.github.io" target="_blank">
+                    Kod źródłowy tej strony
                 </a>
             </div>
         </section>
