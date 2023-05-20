@@ -254,3 +254,12 @@ section {
     position: relative;
     left: -0.7em;
 }
+
+#disclaimer {
+    position:absolute;
+    font-size: 0.3rem;
+    bottom: 0;
+    right: 0.5vw;
+    opacity: 0.5;
+    user-select: none;
+}
