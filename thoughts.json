@@ -28,5 +28,14 @@
     {
         "id": "bułka_z_makiem_niewidome_dzieci",
         "desc": "Niewidome dzieci czytają historyjki na bułkach z makiem"
+    },
+    {
+        "id": "peterpan",
+        "desc": "piotruś pan to bajka o duchu który namawiał dzieci do samobójstwa przez skakanie z okna"
+    },
+    {
+        "id": "beatit",
+        "desc": "Fragment 'No one wants to be defeated' w 'Beat it' Michaela Jacksona można zaśpiewać jako 'Someone wants to beat the fetus' i pasuje to do rytmu",
+        "img": "michael-jackson-beatit.png"
     }
 ]
