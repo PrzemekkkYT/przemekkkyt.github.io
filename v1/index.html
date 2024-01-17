@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przemekkk</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawesome icons -->
+    <link rel="stylesheet" href="icons.css">
+    <!-- style -->
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="styleDesktop.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="styleMobile.css">
+    
+</head>
+<body>
+    <div id="temp_tou" class="hidden"></div>
+    <div id="template_holder" class="hidden">
+        <div class="content" id="projects_content">
+            <a href="https://github.com/PrzemekkkYT/Vipper" target="_blank" class="project" id="project-vipper">
+                <p class="p_title">Vipper</p>
+                <p class="p_desc">Mój pierwszy większy projekt w pythonie. Jest to wielofunkcyjny bot na platformie discord.</p>
+            </a>
+            <a href="https://github.com/PrzemekkkYT/mc-datapacks" target="_blank" class="project" id="project-datapacks">
+                <p class="p_title">MC Datapacks</p>
+                <p class="p_desc">Zbiór paczek danych ulepszających lekko rozgrywkę w grze Minecraft.</p>
+            </a>
+            <a href="https://przemekkkyt.github.io/web-projects/keyboard-game/keyboard-game.html" target="_blank" class="project" id="project-sname">
+                <p class="p_title">'Snake'</p>
+                <p class="p_desc">Gra w javascripcie w zamyśle podobna do gry 'snake'. Różnica jest taka, że ta jest na czas, który się zmniejsza oraz gracznie zmienia rozmiaru.</p>
+            </a>
+            <a href="http://przemekkk.prv.pl/" target="_blank" class="project" id="project-ipcalc">
+                <p class="p_title">Kalkulator IP/podsieci</p>
+                <p class="p_desc">2 kalkulatory: IP i podsieci. Pierwszy oblicza adres sieci i rozgłoszeniowy. Drugi dzieli podaną sieć na wybraną ilość podsieci.</p>
+            </a>
+            <a href="https://przemekkkyt.github.io/web-projects/virtual-tour-pano/" target="_blank" class="project">
+                <p class="p_title">Wirtualny spacer</p>
+                <p class="p_desc">Program webowy pozwalający wygenerować wirtualny spacer po dowolnym miejscu używając informacji z pliku json i zdjęć</p>
+            </a>
+            <a href="https://przemekkkyt.github.io/web-projects/" target="_blank" class="project">
+                <p class="p_title">Projekty webowe</p>
+                <p class="p_desc">Zbiór moich starych projektów webowych</p>
+            </a>
+        </div>
+        <div class="content" id="thoughts_content"></div>
+        <div class="content" id="socials_content">
+            <a href="https://www.youtube.com/c/PrzemekkkYT" target="_blank" class="social">
+                <p class="fa-brands icon-youtube">PrzemekkkYT</p>
+            </a>
+            <a href="https://www.tiktok.com/@przemekkkyt" target="_blank" class="social">
+                <p class="fa-brands icon-tiktok">Przemekkk</p>
+            </a>
+            <a href="https://www.instagram.com/przemekkkyt/" target="_blank" class="social">
+                <p  class="fa-brands icon-instagram">przemekkkyt</p>
+            </a>
+            <a href="https://github.com/PrzemekkkYT" target="_blank" class="social">
+                <p class="fa-brands icon-github">PrzemekkkYT</p>
+            </a>
+            <a href="https://twitter.com/Przemekkk_YT" target="_blank" class="social">
+                <p class="fa-brands icon-twitter">PrzemekkkYT</p>
+            </a>
+        </div>
+    </div>
+    
+    <main>
+        <menu>
+            <div class="menu_selector selected" id="me" onclick="switchSelected(this)">
+                <!-- <p>O mnie</p> -->
+            </div>
+            <div class="menu_selector" id="projects" onclick="switchSelected(this)">
+                <!-- <p>projekty</p> -->
+            </div>
+            <div class="menu_selector" id="thoughts" onclick="switchSelected(this)">
+                <!-- <p>przemyślenia</p> -->
+            </div>
+            <div class="menu_selector" id="socials" onclick="switchSelected(this)">
+                <!-- <p>społecznościowe</p> -->
+            </div>
+        </menu>
+        <section>
+            <div class="content" id="me_content">
+                <div id="avatar_name">
+                    <img src="images/new-avatar-1080.png">
+                    <h2>Przemekkk</h2>
+                </div>
+                <p id="about_me">
+                    Cześć, jestem Przemek i jestem uczniem technikum na kierunku technik informatyk.
+                    W wolnych chwilach lubię pograć w gry, czasem coś obejrzeć lub programować.
+                </p>
+                <p id="prog_langs">
+                    Programuję głównie w języku python, chociaż zdarza mi się też czasem porobić coś w lua a także javascripcie.
+                </p>
+                <a class="fa-brands icon-github" id="me_footer" href="https://github.com/PrzemekkkYT/przemekkkyt.github.io" target="_blank">
+                    Kod źródłowy tej strony
+                </a>
+            </div>
+        </section>
+        <p id="disclaimer">
+           Strona używa icon Font Awesome 6
+        </p>
+    </main>
+    <script src="init_thoughts.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html>
