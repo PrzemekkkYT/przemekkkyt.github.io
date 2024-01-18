@@ -1,0 +1,171 @@
+:root {
+    --darkBackground: #282828;
+    --darkMainColor: #202020;
+    --darkTextColor: #FAFAFF;
+    --darkLink: #23B5D3;
+    --darkBorder: #000;
+}
+
+.desktop {
+    display: none;
+}
+
+* {
+    color: var(--darkTextColor);
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 3.8vw;
+}
+
+body {
+    background-color: var(--darkBackground);
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: var(--darkMainColor);
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+}
+
+menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    max-height: min(max(4em, 40px), 80px);
+}
+
+menu a {
+    text-decoration: none;
+    padding: 0rem 1.2rem;
+    border-right: 2px dashed var(--darkTextColor);
+}
+
+menu a:last-child {
+    border-right: none;
+}
+
+menu a > img {
+    display: block;
+    max-height: min(max(2.5em, 30px), 60px);
+    /* max-height: 2.5em; */
+    padding: calc(min(0.25rem, 10px) + 5px) min(0.25rem, 10px);
+}
+
+section {
+    padding: 2em;
+}
+
+section > h1 {
+    font-size: 3em;
+    font-weight: bolder;
+    text-align: center;
+    letter-spacing: 0.08em;
+}
+
+section > p {
+    font-size: 1.5em;
+}
+
+#about_me > p {
+    background-color: var(--darkMainColor);
+    border-radius: 1em;
+    padding: 1em;
+}
+
+#languages > p {
+    text-align: center;
+}
+
+#lang_container, #proj_container, #social_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.lang, .project {
+    border-radius: 1.5em;
+    border: 0.2em solid var(--darkBorder);
+    background-color: var(--darkMainColor);
+    padding: 3% 10%;
+    font-size: 1.3em;
+    margin-bottom: 5%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.lang > p:first-child {
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.project > h3 {
+    font-size: 1.5em;
+    color: var(--darkLink);
+    text-decoration: underline;
+}
+
+#thoughts_content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.thought {
+    background-color: var(--darkMainColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0.5em;
+    text-decoration: none;
+    color: var(--darkTextColor);
+    border-radius: 1em;
+    border: 0.15em solid var(--darkBorder);
+    padding: 0.5em;
+    min-width: 80%;
+    min-height: 20em;
+    text-wrap: balance;
+    text-align: center;
+    font-size: 1.3em;
+    /* height: 40vh; */
+    line-height: 1.3em;
+}
+
+
+.thought img {
+    height: 10em;
+}
+
+#social_container {
+    margin-bottom: 5em;
+}
+
+.social {
+    font-size: 2em;
+    display: grid;
+    grid-template-columns: 0.3fr 0.7fr;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    text-decoration: none;
+    background-color: var(--darkMainColor);
+    border-radius: 0.5em;
+    margin-top: 0.5em;
+    padding: 0.5em;
+}
+
+.social > span {
+    color: var(--darkLink);
+    text-decoration: underline;
+}
+
+.social img {
+    height: 5rem;
+}
