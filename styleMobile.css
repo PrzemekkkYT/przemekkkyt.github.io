@@ -30,6 +30,7 @@ nav {
     position: fixed;
     width: 100vw;
     bottom: 0;
+    box-shadow: 0 -0.2em 1em var(--darkBorder);
 }
 
 menu {
