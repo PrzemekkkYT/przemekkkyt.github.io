@@ -1,148 +1,112 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Przemekkk</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0" />
-    <!-- style -->
-    <link rel="stylesheet" media="screen and (min-width: 768px)" href="styleDesktop.css">
-    <link rel="stylesheet" media="screen and (max-width: 767px)" href="styleMobile.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przemysław Kotwica</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/styleDesktop.css" media="screen and (min-width: 1024px)">
+    <link rel="stylesheet" href="styles/styleMobile.css" media="screen and (max-width: 1023px)">
 </head>
 <body>
-    <nav>
-        <div id="me" class="desktop">
-            <img src="images/avatar.png" alt="Avatar">
-            <p>Przemekkk</p>
-        </div>
-        <menu>
-            <a href="#about_me">
-                <img src="images/svg/menu/info.svg" alt="Info" class="mobile">
-                <span class="desktop">O mnie</span>
-            </a>
-            <a href="#languages">
-                <img src="images/svg/menu/coding.svg" alt="Langs" class="mobile">
-                <span class="desktop">Języki</span>
-            </a>
-            <a href="#projects">
-                <img src="images/svg/menu/projects.svg" alt="Projects" class="mobile">
-                <span class="desktop">Projekty</span>
-            </a>
-            <a href="#thoughts">
-                <img src="images/svg/menu/thoughts.svg" alt="Thoughts" class="mobile">
-                <span class="desktop">Przemyślenia</span>
-            </a>
-            <a href="#social_media">
-                <img src="images/svg/menu/hash.svg" alt="Social" class="mobile">
-                <span class="desktop">Social</span>
-            </a>
-        </menu>
-    </nav>
+    <header>
+        <h1 class="name">Przemysław<br/>Kotw<span>ic</span>a</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-me">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <section id="about_me">
-            <h1>O mnie</h1>
-            <p>Cześć, jestem Przemek i jestem absolwentem technikum informatycznego w Bolesławcu.
-                W wolnych chwilach lubię pograć w gry, czasem coś obejrzeć lub programować.
-                Programuję głównie w języku python, chociaż zdarza mi się też czasem porobić coś w C# a także javascripcie.
-            </p>
-        </section><hr>
-        <section id="languages">
-            <h1>Języki</h1>
-            <p>Dużo po trochę, mało na dłużej</p>
-            <div id="lang_container">
-                <div class="lang">
-                    <p>Python</p>
-                    <p>Poziom: Średnio-zaawansowany</p>
-                </div>
-                <div class="lang">
-                    <p>C#</p>
-                    <p>Poziom: Średni</p>
-                </div>
-                <div class="lang">
-                    <p>JavaScript</p>
-                    <p>Poziom: Średni</p>
-                </div>
-                <div class="lang">
-                    <p>Dart</p>
-                    <p>Poziom: Podstawowy</p>
-                </div>
-                <div class="lang">
-                    <p>SQL</p>
-                    <p>Poziom: Podstawowy</p>
-                </div>
-                <div class="lang">
-                    <p>Lua</p>
-                    <p>Poziom: Podstawowy</p>
-                </div>
-                <div class="lang">
-                    <p>PHP</p>
-                    <p>Poziom: Podstawowy</p>
+        <section class="home" id="home">
+            <div class="avatar-border">
+                <div class="avatar">
+                    <img src="./images/avatar.jpg" alt="Avatar" class="avatar-img">
                 </div>
             </div>
-        </section><hr>
-        <section id="projects">
-            <h1>Projekty</h1>
-            <div id="proj_container">
-                <a href="https://github.com/PrzemekkkYT/Vipper" target="_blank" class="project" id="project-vipper">
-                    <h3 class="p_title">Vipper</h3>
-                    <p class="p_desc">Mój pierwszy większy projekt w pythonie. Jest to wielofunkcyjny bot na platformie discord.</p>
-                </a>
-                <a href="https://top.gg/bot/961629679327002655" target="_blank" class="project" id="project-freegamer">
-                    <h3 class="p_title">Free Gamer</h3>
-                    <p class="p_desc">Bot wysyłający informacje o darmowych grach ze sklepów Steam, Epic Games i GOG na discordzie.</p>
-                </a>
-                <a href="https://github.com/PrzemekkkYT/RaftMIDI" target="_blank" class="project">
-                    <h3 class="p_title">RaftMIDI</h3>
-                    <p class="p_desc">Konwerter plików MIDI na AutoHotkey w celu automatycznego grania na pianinie w grze Raft</p>
-                </a>
-                <a href="https://github.com/RandomThingsIveDone/Rafiano" target="_blank" class="project" id="project-rafiano">
-                    <h3 class="p_title">Rafiano (Pomoc)</h3>
-                    <p class="p_desc">Zrobiłem konwerter plików midi do formatu .notesheet programu Rafiano</p>
-                </a>
-                <a href="https://przemekkkyt.github.io/web-projects/virtual-tour-pano/" target="_blank" class="project" id="project-virtual-tour">
-                    <h3 class="p_title">Wirtualny spacer</h3>
-                    <p class="p_desc">Program webowy pozwalający wygenerować wirtualny spacer po dowolnym miejscu używając informacji z pliku json i zdjęć</p>
-                </a>
-                <a href="https://przemekkkyt.github.io/web-projects/keyboard-game/keyboard-game.html" target="_blank" class="project" id="project-snake">
-                    <h3 class="p_title">'Snake'</h3>
-                    <p class="p_desc">Gra w javascripcie w zamyśle podobna do gry 'snake'. Różnica jest taka, że ta jest na czas, który się zmniejsza oraz gracznie zmienia rozmiaru.</p>
-                </a>
-                <a href="http://przemekkk.prv.pl/" target="_blank" class="project" id="project-ipcalc">
-                    <h3 class="p_title">Kalkulator IP/podsieci</h3>
-                    <p class="p_desc">2 kalkulatory: IP i podsieci. Pierwszy oblicza adres sieci i rozgłoszeniowy. Drugi dzieli podaną sieć na wybraną ilość podsieci.</p>
-                </a>
-                <a href="https://github.com/PrzemekkkYT/mc-datapacks" target="_blank" class="project" id="project-datapacks">
-                    <h3 class="p_title">MC Datapacks</h3>
-                    <p class="p_desc">Zbiór paczek danych ulepszających lekko rozgrywkę w grze Minecraft.</p>
-                </a>
-                <a href="https://przemekkkyt.github.io/web-projects/" target="_blank" class="project">
-                    <h3 class="p_title">Projekty webowe</h3>
-                    <p class="p_desc">Zbiór moich starych projektów webowych</p>
-                </a>
-            </div>
-        </section><hr>
-        <section id="thoughts">
-            <h1>Przemyślenia</h1>
-            <div id="temp_tou" class="hidden"></div>
-            <div id="thoughts_content"></div>
-        </section><hr>
-        <section id="social_media">
-            <h1>Social media</h1>
-            <div id="social_container">
-                <a href="https://www.youtube.com/c/PrzemekkkYT" target="_blank" class="social">
-                    <img src="images/svg/social/youtube.svg" alt="Youtube"><span>PrzemekkkYT</span>
-                </a>
-                <a href="https://www.tiktok.com/@przemekkkyt" target="_blank" class="social">
-                    <img src="images/svg/social/tiktok.svg" alt="TikTok"><span>przemekkkyt</span>
-                </a>
-                <a href="https://github.com/PrzemekkkYT" target="_blank" class="social">
-                    <img src="images/svg/social/github.svg" alt="Github"><span>PrzemekkkYT</span>
-                </a>
-                <a href="https://twitter.com/Przemekkk_YT" target="_blank" class="social">
-                    <img src="images/svg/social/twitter.svg" alt="Twitter"><span>Przemekkk_YT</span>
-                </a>
-            </div>
+            <p class="name">Przemysław<br/>Kotw<span>ic</span>a</p>
+        </section>
+        <section class="about-me back-elements" id="about-me">
+            <h1 lang-key="about_me"></h1>
+            <p lang-key="about_me_description"></p>
+            <hr>
+        </section>
+        <section class="projects" id="projects">
+            <h1 lang-key="projects"></h1>
+            <a href="https://github.com/PrzemekkkYT/Vipper" target="_blank" class="project">
+                <div>
+                    <h1>Vipper</h1>
+                    <p lang-key="project_vipper_description"></p>
+                </div>
+                <img src="./images/projects/vipper.png" alt="Vipper Project Image">
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=pl.przemekkk.nextloot" target="_blank" class="project">
+                <div>
+                    <h1>NextLoot</h1>
+                    <p lang-key="project_nextloot_description"></p>
+                </div>
+                <img src="./images/projects/nextloot.png" alt="NextLoot Project Image">
+            </a>
+            <a href="https://top.gg/bot/961629679327002655" target="_blank" class="project">
+                <div>
+                    <h1>Free Gamer</h1>
+                    <p lang-key="project_freegamer_description"></p>
+                </div>
+                <img src="./images/projects/freegamer.png" alt="Free Gamer Project Image">
+            </a>
+            <a href="https://przemekkk.pl/web-projects/virtual-tour-pano/" target="_blank" class="project">
+                <div>
+                    <h1 lang-key="project_virtualtour_title"></h1>
+                    <p lang-key="project_virtualtour_description"></p>
+                </div>
+                <img src="./images/projects/virtual_tour.png" alt="Virtual Tour Project Image">
+            </a>
+            <a href="https://github.com/PrzemekkkYT/RaftMIDI" target="_blank" class="project">
+                <div>
+                    <h1>RaftMIDI</h1>
+                    <p lang-key="project_raftmidi_description"></p>
+                </div>
+                <img src="./images/projects/raftMIDI.jpg" alt="RaftMIDI Project Image">
+            </a>
+        </section>
+        <section class="contact back-elements" id="contact">
+            <h1 lang-key="contact"></h1>
+            <p lang-key="contact_description"></p>
+            <form action="https://submit-form.com/wSMq067NG" id="contact-form">
+                <input type="text" name="email" id="email" lang-key="form_email" required>
+                <input type="text" name="subject" id="subject" lang-key="form_subject" required>
+                <textarea name="message" id="message" lang-key="form_message" required></textarea>
+                <div id="form_bottom">
+                    <button type="submit" id="submitButton" lang-key="form_send"></button>
+                </div>
+            </form>
         </section>
     </main>
+    <footer>
+        <div id="footer_social">
+            <a href="https://github.com/PrzemekkkYT" target="_blank" class="social-link">
+                <img src="./images/social/github.svg" alt="GitHub">@PrzemekkkYT
+            </a>
+            <a href="https://www.linkedin.com/in/przemys%C5%82aw-kotwica-593b77318/" target="_blank" class="social-link">
+                <img src="./images/social/linkedin.svg" alt="Linkedin">@przemyslaw-kotwica
+            </a>
+
+        </div>
+        <div id="footer_center">
+            <p handlebars>© {{year}} Przemysław Kotwica</p>
+            <p class="version" lang-key="version" handlebars></p>
+            <p class="date" lang-key="last_update" handlebars></p>
+        </div>
+        <div id="footer_right"></div>
+    </footer>
+
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+    <script src="scripts/languages.js"></script>
+    <script src="scripts/handlebars.js"></script>
+    <script src="scripts/captcha.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
-<script src="init_thoughts.js"></script>
 </html>
