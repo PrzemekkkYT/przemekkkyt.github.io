@@ -1,9 +1,10 @@
 {
+    "home": "Strona główna",
     "about_me": "O mnie",
     "about_me_description": "Cześć, nazywam się Przemysław i jestem absolwentem Technikum Informatycznego w Bolesławcu. W wolnym czasie lubię poświęcić chwilę na gry komputerowe, obejrzeć coś ciekawego lub pobawić się programowaniem. Najczęściej pracuję w Pythonie, ale zdarza mi się też tworzyć projekty w C#, JavaScript oraz Dart. Staram się nieustannie rozwijać swoje umiejętności i poznawać nowe technologie, bo programowanie to dla mnie nie tylko praca, ale też pasja.",
     "projects": "Projekty",
     "project_vipper_description": "Mój pierwszy większy projekt napisany w Pythonie w 2018 roku. Jest to wielofunkcyjny bot na platformie Discord. Pozwalający m.in. na puszczanie muzyki, tworzenie ankiet, czytanie wiadomości z kanałów dzięki TTS, a także wiele innych funkcji.",
-    "project_nextloot_description": "Aplikacja na telefony napisana w języku Dart, która wyświetla użytkownikom darmówki na platformach takich jak <b>Epic Games, Steam</b> czy <b>GOG</b>. Aplikacja jest obecnie dostępna jedynie na system <b>Android</b>. W planach jest również wersja na system <b>iOS</b>.",
+    "project_nextloot_description": "<h2>Obecnie w zamkniętej becie</h2>Aplikacja na telefony napisana w języku Dart, która wyświetla użytkownikom darmówki z platform takich jak <b>Epic Games, Steam</b> czy <b>GOG</b>. Aplikacja jest obecnie dostępna jedynie na system <b>Android</b>. W planach jest również wersja na system <b>iOS</b>.",
     "project_freegamer_description": "Prekursor aplikacji NextLoot. Jest to Bot na Discorda. Projekt jest napisany w Pythonie i korzysta z API tych sklepów, aby dostarczać użytkownikom aktualne informacje o dostępnych promocjach.",
     "project_virtualtour_title": "Wirtualny spacer",
     "project_virtualtour_description": "Projekt w języku JavaScript pozwalający na wygenerowanie wirtualnego spaceru z wykorzystaniem zdjęć 360° i ustandaryzowanego formatu JSON.",

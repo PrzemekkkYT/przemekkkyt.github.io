@@ -7,10 +7,7 @@ function applyHandlebars(element) {
     "{{last_update}}",
     document.lastModified
   );
-  element.innerHTML = element.innerHTML.replace(
-    "{{version}}",
-    "v1.0.1" // Replace with the actual version if available
-  );
+  element.innerHTML = element.innerHTML.replace("{{version}}", "v1.1.0");
 }
 
 function handlebars(element, handlebar, value) {

@@ -13,12 +13,19 @@
         <h1 class="name">Przemysław<br/>Kotw<span>ic</span>a</h1>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about-me">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" lang-key="home"></a></li>
+                <li><a href="#about-me" lang-key="about_me"></a></li>
+                <li><a href="#projects" lang-key="projects"></a></li>
+                <li><a href="#contact" lang-key="contact"></a></li>
             </ul>
         </nav>
+        <div id="language-selector" class="lang-selector">
+            <button id="language-button" class="lang-button" lang-key="" onclick="toggleLanguageMenu()"></button>
+            <div id="language-menu" class="lang-menu hidden">
+                <button class="lang-option" onclick="setLanguage('en')"><img src="images/flags/en.png" alt="en"> English</button>
+                <button class="lang-option" onclick="setLanguage('pl')"><img src="images/flags/pl.png" alt="pl"> Polski</button>
+            </div>
+        </div>
     </header>
     <main>
         <section class="home" id="home">
@@ -76,7 +83,7 @@
             <h1 lang-key="contact"></h1>
             <p lang-key="contact_description"></p>
             <form action="https://submit-form.com/wSMq067NG" id="contact-form">
-                <input type="text" name="email" id="email" lang-key="form_email" required>
+                <input type="email" name="email" id="email" lang-key="form_email" required>
                 <input type="text" name="subject" id="subject" lang-key="form_subject" required>
                 <textarea name="message" id="message" lang-key="form_message" required></textarea>
                 <div id="form_bottom">

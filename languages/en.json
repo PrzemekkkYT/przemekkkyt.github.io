@@ -1,0 +1,19 @@
+{
+    "home": "Home",
+    "about_me": "About me",
+    "about_me_description": "Hi, my name is Przemysław and I am a graduate of the IT Technical School in Bolesławiec. In my free time, I like to spend some time playing computer games, watching something interesting, or having fun with programming. I mostly work in Python, but I also create projects in C#, JavaScript, and Dart. I constantly try to develop my skills and learn new technologies, because programming is not only a job for me, but also a passion.",
+    "projects": "Projects",
+    "project_vipper_description": "My first bigger project written in Python in 2018. It is a multifunctional bot for the Discord platform. It allows, among other things, playing music, creating polls, reading messages from channels using TTS, and many other features.",
+    "project_nextloot_description": "<h2>Currently in closed beta</h2>A mobile application written in Dart that shows users free games from platforms such as <b>Epic Games, Steam</b>, and <b>GOG</b>. The app is currently only available for <b>Android</b>. An <b>iOS</b> version is also planned.",
+    "project_freegamer_description": "The predecessor of the NextLoot app. It is a Discord bot. The project is written in Python and uses the APIs of these stores to provide users with up-to-date information about available promotions.",
+    "project_virtualtour_title": "Virtual tour",
+    "project_virtualtour_description": "A project in JavaScript that allows you to generate a virtual tour using 360° photos and a standardized JSON format.",
+    "project_raftmidi_description": "An application written in Python that allows you to automatically play MIDI files on the piano in the game Raft using AutoHotkey.",
+    "contact": "Contact",
+    "form_email": "Your email address",
+    "form_subject": "Subject",
+    "form_message": "Message",
+    "form_send": "Send",
+    "last_update": "Last update {{last_update}}",
+    "version": "Version {{version}}"
+}
