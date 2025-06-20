@@ -52,7 +52,7 @@ function initializeLanguage() {
     lang +
     ".png' alt='" +
     lang +
-    "'><span>▼</span>";
+    "'><span class='mobile-hidden'>▼</span><span class='mobile-only'>▶</span>";
   const langData = fetchLanguageData(lang)
     .then((langData) => {
       if (langData) {

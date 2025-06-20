@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
     <title>Przemysław Kotwica</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/styleDesktop.css" media="screen and (min-width: 1024px)">
@@ -11,21 +11,30 @@
 <body>
     <header>
         <h1 class="name">Przemysław<br/>Kotw<span>ic</span>a</h1>
-        <nav>
-            <ul>
-                <li><a href="#home" lang-key="home"></a></li>
-                <li><a href="#about-me" lang-key="about_me"></a></li>
-                <li><a href="#projects" lang-key="projects"></a></li>
-                <li><a href="#contact" lang-key="contact"></a></li>
-            </ul>
-        </nav>
-        <div id="language-selector" class="lang-selector">
-            <button id="language-button" class="lang-button" lang-key="" onclick="toggleLanguageMenu()"></button>
-            <div id="language-menu" class="lang-menu hidden">
-                <button class="lang-option" onclick="setLanguage('en')"><img src="images/flags/en.png" alt="en"> English</button>
-                <button class="lang-option" onclick="setLanguage('pl')"><img src="images/flags/pl.png" alt="pl"> Polski</button>
-            </div>
-        </div>
+        <button id="burger-menu" class="mobile-only" onclick="toggleMenu()">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 18L20 18" stroke="var(--burger-color)" stroke-width="2" stroke-linecap="round"/>
+                <path d="M4 12L20 12" stroke="var(--burger-color)" stroke-width="2" stroke-linecap="round"/>
+                <path d="M4 6L20 6" stroke="var(--burger-color)" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </button>
+        <nav id="main-menu" class="mobile-nav-hidden">
+                <ul>
+                    <li><a href="#home" lang-key="home"></a></li>
+                    <li><a href="#about-me" lang-key="about_me"></a></li>
+                    <li><a href="#projects" lang-key="projects"></a></li>
+                    <li><a href="#contact" lang-key="contact"></a></li>
+                    <li>
+                        <div id="language-selector" class="lang-selector">
+                            <button id="language-button" class="lang-button" lang-key="" onclick="toggleLanguageMenu()"></button>
+                            <div id="language-menu" class="lang-menu hidden">
+                                <button class="lang-option" onclick="setLanguage('en')"><img src="images/flags/en.png" alt="en"> English</button>
+                                <button class="lang-option" onclick="setLanguage('pl')"><img src="images/flags/pl.png" alt="pl"> Polski</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
     </header>
     <main>
         <section class="home" id="home">
@@ -82,38 +91,37 @@
         <section class="contact back-elements" id="contact">
             <h1 lang-key="contact"></h1>
             <p lang-key="contact_description"></p>
-            <form action="https://submit-form.com/wSMq067NG" id="contact-form">
-                <input type="email" name="email" id="email" lang-key="form_email" required>
-                <input type="text" name="subject" id="subject" lang-key="form_subject" required>
-                <textarea name="message" id="message" lang-key="form_message" required></textarea>
-                <div id="form_bottom">
-                    <button type="submit" id="submitButton" lang-key="form_send"></button>
+            <div id="contact-main">
+                <div id="social">
+                    <a href="https://github.com/PrzemekkkYT" target="_blank" class="social-link">
+                        <img src="./images/social/github.svg" alt="GitHub">@PrzemekkkYT
+                    </a>
+                    <a href="https://www.linkedin.com/in/przemys%C5%82aw-kotwica-593b77318/" target="_blank" class="social-link">
+                        <img src="./images/social/linkedin.svg" alt="Linkedin">@przemyslaw-kotwica
+                    </a>
                 </div>
-            </form>
+                <form action="https://submit-form.com/wSMq067NG" id="contact-form">
+                    <input type="email" name="email" id="email" lang-key="form_email" required>
+                    <input type="text" name="subject" id="subject" lang-key="form_subject" required>
+                    <textarea name="message" id="message" lang-key="form_message" required></textarea>
+                    <div id="form_bottom">
+                        <button type="submit" id="submitButton" lang-key="form_send"></button>
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
     <footer>
-        <div id="footer_social">
-            <a href="https://github.com/PrzemekkkYT" target="_blank" class="social-link">
-                <img src="./images/social/github.svg" alt="GitHub">@PrzemekkkYT
-            </a>
-            <a href="https://www.linkedin.com/in/przemys%C5%82aw-kotwica-593b77318/" target="_blank" class="social-link">
-                <img src="./images/social/linkedin.svg" alt="Linkedin">@przemyslaw-kotwica
-            </a>
-
-        </div>
-        <div id="footer_center">
-            <p handlebars>© {{year}} Przemysław Kotwica</p>
-            <p class="version" lang-key="version" handlebars></p>
-            <p class="date" lang-key="last_update" handlebars></p>
-        </div>
-        <div id="footer_right"></div>
+        <p handlebars>© {{year}} Przemysław Kotwica</p>
+        <p class="version" lang-key="version" handlebars></p>
+        <p class="date" lang-key="last_update" handlebars></p>
     </footer>
 
     <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
     <script src="scripts/languages.js"></script>
     <script src="scripts/handlebars.js"></script>
     <script src="scripts/captcha.js"></script>
+    <script src="scripts/mobile.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>

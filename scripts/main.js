@@ -16,5 +16,15 @@ window.addEventListener("DOMContentLoaded", () => {
     if (languageSelector && !languageSelector.contains(e.target)) {
       languageMenu.classList.add("hidden");
     }
+    const mainMenu = document.querySelector("#main-menu");
+    const menuToggleButton = document.querySelector("#burger-menu");
+    if (
+      mainMenu &&
+      !mainMenu.contains(e.target) &&
+      !menuToggleButton.contains(e.target)
+    ) {
+      mainMenu.classList.add("mobile-nav-hidden");
+      mainMenu.classList.remove("mobile-nav-visible");
+    }
   });
 });

@@ -10,6 +10,7 @@
     "project_virtualtour_description": "A project in JavaScript that allows you to generate a virtual tour using 360° photos and a standardized JSON format.",
     "project_raftmidi_description": "An application written in Python that allows you to automatically play MIDI files on the piano in the game Raft using AutoHotkey.",
     "contact": "Contact",
+    "contact_description": "Do you have any questions? Want to get in touch with me? Send me a message and I will try to reply as soon as possible.",
     "form_email": "Your email address",
     "form_subject": "Subject",
     "form_message": "Message",
