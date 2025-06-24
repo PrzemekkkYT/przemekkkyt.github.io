@@ -1,131 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1"
+    />
     <title>Przemysław Kotwica</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/styleDesktop.css" media="screen and (min-width: 1024px)">
-    <link rel="stylesheet" href="styles/styleMobile.css" media="screen and (max-width: 1023px)">
-</head>
-<body>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/loader.css" />
+    <link
+      rel="stylesheet"
+      href="styles/styleDesktop.css"
+      media="screen and (min-width: 1024px)"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/styleMobile.css"
+      media="screen and (max-width: 1023px)"
+    />
+  </head>
+  <body>
     <header>
-        <h1 class="name">Przemysław<br/>Kotw<span>ic</span>a</h1>
-        <button id="burger-menu" class="mobile-only" onclick="toggleMenu()">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4 18L20 18" stroke="var(--burger-color)" stroke-width="2" stroke-linecap="round"/>
-                <path d="M4 12L20 12" stroke="var(--burger-color)" stroke-width="2" stroke-linecap="round"/>
-                <path d="M4 6L20 6" stroke="var(--burger-color)" stroke-width="2" stroke-linecap="round"/>
-            </svg>
-        </button>
-        <nav id="main-menu" class="mobile-nav-hidden">
-                <ul>
-                    <li><a href="#home" lang-key="home"></a></li>
-                    <li><a href="#about-me" lang-key="about_me"></a></li>
-                    <li><a href="#projects" lang-key="projects"></a></li>
-                    <li><a href="#contact" lang-key="contact"></a></li>
-                    <li>
-                        <div id="language-selector" class="lang-selector">
-                            <button id="language-button" class="lang-button" lang-key="" onclick="toggleLanguageMenu()"></button>
-                            <div id="language-menu" class="lang-menu hidden">
-                                <button class="lang-option" onclick="setLanguage('en')"><img src="images/flags/en.png" alt="en"> English</button>
-                                <button class="lang-option" onclick="setLanguage('pl')"><img src="images/flags/pl.png" alt="pl"> Polski</button>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
+      <h1 class="name">Przemysław<br />Kotw<span>ic</span>a</h1>
+      <button id="burger-menu" class="mobile-only" onclick="toggleMenu()">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M4 18L20 18"
+            stroke="var(--burger-color)"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M4 12L20 12"
+            stroke="var(--burger-color)"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M4 6L20 6"
+            stroke="var(--burger-color)"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+      </button>
+      <nav id="main-menu" class="mobile-nav-hidden">
+        <ul>
+          <li><a href="#home" lang-key="home"></a></li>
+          <li><a href="#about-me" lang-key="about_me"></a></li>
+          <li><a href="#projects" lang-key="projects"></a></li>
+          <li><a href="#contact" lang-key="contact"></a></li>
+          <li>
+            <div id="language-selector" class="lang-selector">
+              <button
+                id="language-button"
+                class="lang-button"
+                lang-key=""
+                onclick="toggleLanguageMenu()"
+              ></button>
+              <div id="language-menu" class="lang-menu hidden">
+                <button class="lang-option" onclick="setLanguage('en')">
+                  <img src="images/flags/en.png" alt="en" /> English
+                </button>
+                <button class="lang-option" onclick="setLanguage('pl')">
+                  <img src="images/flags/pl.png" alt="pl" /> Polski
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section class="home" id="home">
-            <div class="avatar-border">
-                <div class="avatar">
-                    <img src="./images/avatar.jpg" alt="Avatar" class="avatar-img">
-                </div>
+      <section class="home" id="home">
+        <div class="avatar-border">
+          <div class="avatar">
+            <img src="./images/avatar.jpg" alt="Avatar" class="avatar-img" />
+          </div>
+        </div>
+        <p class="name">Przemysław<br />Kotw<span>ic</span>a</p>
+      </section>
+      <section class="about-me back-elements" id="about-me">
+        <h1 lang-key="about_me"></h1>
+        <p lang-key="about_me_description"></p>
+        <hr />
+      </section>
+      <section class="projects" id="projects">
+        <h1 lang-key="projects"></h1>
+        <a
+          href="https://github.com/PrzemekkkYT/Vipper"
+          target="_blank"
+          class="project"
+        >
+          <div>
+            <h1>Vipper</h1>
+            <p lang-key="project_vipper_description"></p>
+          </div>
+          <img src="./images/projects/vipper.png" alt="Vipper Project Image" />
+        </a>
+        <a
+          href="https://play.google.com/store/apps/details?id=pl.przemekkk.nextloot"
+          target="_blank"
+          class="project"
+        >
+          <div>
+            <h1>NextLoot</h1>
+            <p lang-key="project_nextloot_description"></p>
+          </div>
+          <img
+            src="./images/projects/nextloot.png"
+            alt="NextLoot Project Image"
+          />
+        </a>
+        <a
+          href="https://top.gg/bot/961629679327002655"
+          target="_blank"
+          class="project"
+        >
+          <div>
+            <h1>Free Gamer</h1>
+            <p lang-key="project_freegamer_description"></p>
+          </div>
+          <img
+            src="./images/projects/freegamer.png"
+            alt="Free Gamer Project Image"
+          />
+        </a>
+        <a
+          href="https://przemekkk.pl/web-projects/virtual-tour-pano/"
+          target="_blank"
+          class="project"
+        >
+          <div>
+            <h1 lang-key="project_virtualtour_title"></h1>
+            <p lang-key="project_virtualtour_description"></p>
+          </div>
+          <img
+            src="./images/projects/virtual_tour.png"
+            alt="Virtual Tour Project Image"
+          />
+        </a>
+        <a
+          href="https://github.com/PrzemekkkYT/RaftMIDI"
+          target="_blank"
+          class="project"
+        >
+          <div>
+            <h1>RaftMIDI</h1>
+            <p lang-key="project_raftmidi_description"></p>
+          </div>
+          <img
+            src="./images/projects/raftMIDI.jpg"
+            alt="RaftMIDI Project Image"
+          />
+        </a>
+      </section>
+      <section class="contact back-elements" id="contact">
+        <h1 lang-key="contact"></h1>
+        <p lang-key="contact_description"></p>
+        <div id="contact-main">
+          <div id="social">
+            <a
+              href="https://github.com/PrzemekkkYT"
+              target="_blank"
+              class="social-link"
+            >
+              <img src="./images/social/github.svg" alt="GitHub" />@PrzemekkkYT
+            </a>
+            <a
+              href="https://www.linkedin.com/in/przemys%C5%82aw-kotwica-593b77318/"
+              target="_blank"
+              class="social-link"
+            >
+              <img
+                src="./images/social/linkedin.svg"
+                alt="Linkedin"
+              />@przemyslaw-kotwica
+            </a>
+          </div>
+          <form
+            action="https://submit-form.com/wSMq067NG"
+            id="contact-form"
+            target="_blank"
+            data-botpoison-public-key="pk_a7988690-44e5-4139-b35b-b40d052c0a63"
+          >
+            <div id="loader-box" class="hidden">
+              <div class="loader" id="form-loader"></div>
             </div>
-            <p class="name">Przemysław<br/>Kotw<span>ic</span>a</p>
-        </section>
-        <section class="about-me back-elements" id="about-me">
-            <h1 lang-key="about_me"></h1>
-            <p lang-key="about_me_description"></p>
-            <hr>
-        </section>
-        <section class="projects" id="projects">
-            <h1 lang-key="projects"></h1>
-            <a href="https://github.com/PrzemekkkYT/Vipper" target="_blank" class="project">
-                <div>
-                    <h1>Vipper</h1>
-                    <p lang-key="project_vipper_description"></p>
-                </div>
-                <img src="./images/projects/vipper.png" alt="Vipper Project Image">
-            </a>
-            <a href="https://play.google.com/store/apps/details?id=pl.przemekkk.nextloot" target="_blank" class="project">
-                <div>
-                    <h1>NextLoot</h1>
-                    <p lang-key="project_nextloot_description"></p>
-                </div>
-                <img src="./images/projects/nextloot.png" alt="NextLoot Project Image">
-            </a>
-            <a href="https://top.gg/bot/961629679327002655" target="_blank" class="project">
-                <div>
-                    <h1>Free Gamer</h1>
-                    <p lang-key="project_freegamer_description"></p>
-                </div>
-                <img src="./images/projects/freegamer.png" alt="Free Gamer Project Image">
-            </a>
-            <a href="https://przemekkk.pl/web-projects/virtual-tour-pano/" target="_blank" class="project">
-                <div>
-                    <h1 lang-key="project_virtualtour_title"></h1>
-                    <p lang-key="project_virtualtour_description"></p>
-                </div>
-                <img src="./images/projects/virtual_tour.png" alt="Virtual Tour Project Image">
-            </a>
-            <a href="https://github.com/PrzemekkkYT/RaftMIDI" target="_blank" class="project">
-                <div>
-                    <h1>RaftMIDI</h1>
-                    <p lang-key="project_raftmidi_description"></p>
-                </div>
-                <img src="./images/projects/raftMIDI.jpg" alt="RaftMIDI Project Image">
-            </a>
-        </section>
-        <section class="contact back-elements" id="contact">
-            <h1 lang-key="contact"></h1>
-            <p lang-key="contact_description"></p>
-            <div id="contact-main">
-                <div id="social">
-                    <a href="https://github.com/PrzemekkkYT" target="_blank" class="social-link">
-                        <img src="./images/social/github.svg" alt="GitHub">@PrzemekkkYT
-                    </a>
-                    <a href="https://www.linkedin.com/in/przemys%C5%82aw-kotwica-593b77318/" target="_blank" class="social-link">
-                        <img src="./images/social/linkedin.svg" alt="Linkedin">@przemyslaw-kotwica
-                    </a>
-                </div>
-                <form action="https://submit-form.com/wSMq067NG" id="contact-form">
-                    <input type="email" name="email" id="email" lang-key="form_email" required>
-                    <input type="text" name="subject" id="subject" lang-key="form_subject" required>
-                    <textarea name="message" id="message" lang-key="form_message" required></textarea>
-                    <div id="form_bottom">
-                        <button id="submitButton" class="g-recaptcha"
-            data-sitekey="6LehoGgrAAAAAMLDjuQ4eJLsimStvHem3F1HKvL1"
-            data-callback="onSubmit" data-badge="bottomleft" lang-key="form_send"></button>
-                    </div>
-                </form>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              lang-key="form_email"
+              pattern="^\S+@\S+\.\S+$"
+              required
+            />
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              lang-key="form_subject"
+              required
+            />
+            <textarea
+              name="message"
+              id="message"
+              lang-key="form_message"
+              required
+            ></textarea>
+            <div id="form_bottom">
+              <button
+                type="submit"
+                id="submit-button"
+                lang-key="form_send"
+              ></button>
             </div>
-        </section>
+          </form>
+        </div>
+      </section>
     </main>
     <footer>
-        <p handlebars>© {{year}} Przemysław Kotwica</p>
-        <p class="version" lang-key="version" handlebars></p>
-        <p class="date" lang-key="last_update" handlebars></p>
+      <p handlebars>© {{year}} Przemysław Kotwica</p>
+      <p class="version" lang-key="version" handlebars></p>
+      <p class="date" lang-key="last_update" handlebars></p>
     </footer>
-    
 
-
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://unpkg.com/@botpoison/browser" async></script>
     <script src="scripts/languages.js"></script>
     <script src="scripts/handlebars.js"></script>
-    <script src="scripts/captcha.js"></script>
+    <script src="scripts/botpoison.js"></script>
     <script src="scripts/mobile.js"></script>
     <script src="scripts/main.js"></script>
-</body>
+  </body>
 </html>
