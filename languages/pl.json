@@ -9,6 +9,7 @@
     "project_virtualtour_title": "Wirtualny spacer",
     "project_virtualtour_description": "Projekt w języku JavaScript pozwalający na wygenerowanie wirtualnego spaceru z wykorzystaniem zdjęć 360° i ustandaryzowanego formatu JSON.",
     "project_raftmidi_description": "Aplikacja napisana w Pythonie, która pozwala na automatyczne granie plików MIDI na pianinie w grze Raft za pomocą programu AutoHotkey.",
+    "project_godot_isometric_description": "Prosty projekt na silniku Godot stworzony podczas nauki tego silnika. Program generuje pusty izometryczny świat, w którym można przesuwać mapę i zobaczyć generację terenu.",
     "contact": "Kontakt",
     "contact_description": "Masz jakieś pytania? Chcesz się ze mną skontaktować? Napisz do mnie wiadomość, a postaram się odpowiedzieć tak szybko, jak to możliwe.",
     "form_email": "Twój adres e-mail",
