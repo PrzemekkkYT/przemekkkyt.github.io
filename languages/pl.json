@@ -1,7 +1,7 @@
 {
     "home": "Strona główna",
     "about_me": "O mnie",
-    "about_me_description": "Cześć, nazywam się Przemysław i jestem absolwentem Technikum Informatycznego w Bolesławcu. W wolnym czasie lubię poświęcić chwilę na gry komputerowe, obejrzeć coś ciekawego lub pobawić się programowaniem. Najczęściej pracuję w Pythonie, ale zdarza mi się też tworzyć projekty w C#, JavaScript oraz Dart. Staram się nieustannie rozwijać swoje umiejętności i poznawać nowe technologie, bo programowanie to dla mnie nie tylko praca, ale też pasja.",
+    "about_me_description": "Cześć, nazywam się Przemysław i jestem absolwentem Technikum Informatycznego w Bolesławcu. W wolnym czasie lubię poświęcić chwilę na gry komputerowe, obejrzeć coś ciekawego lub pobawić się programowaniem. Najczęściej pracuję w <b>Pythonie</b>, ale zdarza mi się też tworzyć projekty w <b>C#</b>, <b>JavaScript</b> oraz <b>Dart</b>. Staram się nieustannie rozwijać swoje umiejętności i poznawać nowe technologie, aby nie zostać w tyle.",
     "projects": "Projekty",
     "project_vipper_description": "Mój pierwszy większy projekt napisany w Pythonie w 2018 roku. Jest to wielofunkcyjny bot na platformie Discord. Pozwalający m.in. na puszczanie muzyki, tworzenie ankiet, czytanie wiadomości z kanałów dzięki TTS, a także wiele innych funkcji.",
     "project_nextloot_description": "<h2>Obecnie w zamkniętej becie</h2>Aplikacja na telefony napisana w języku Dart, która wyświetla użytkownikom darmówki z platform takich jak <b>Epic Games, Steam</b> czy <b>GOG</b>. Aplikacja jest obecnie dostępna jedynie na system <b>Android</b>. W planach jest również wersja na system <b>iOS</b>.",

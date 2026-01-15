@@ -3,10 +3,6 @@ function applyHandlebars(element) {
     "{{year}}",
     new Date().getFullYear()
   );
-  element.innerHTML = element.innerHTML.replace(
-    "{{last_update}}",
-    document.lastModified
-  );
   element.innerHTML = element.innerHTML.replace("{{version}}", "v1.3.6");
 }
 

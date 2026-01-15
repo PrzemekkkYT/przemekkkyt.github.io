@@ -242,6 +242,11 @@ p.name::after {
 
 .about-me {
   font-size: 3rem;
+  padding-top: 10vh;
+}
+
+.about-me > h1 {
+  font-size: 5rem;
 }
 
 .about-me > p {
@@ -270,7 +275,7 @@ p.name::after {
 }
 
 .projects > h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   margin: 50px 20px;
   align-self: center;
 }
@@ -351,6 +356,7 @@ p.name::after {
   flex-direction: column;
   align-items: center;
   width: 100vw;
+  padding-bottom: 15vh;
 }
 
 .contact::before {
@@ -361,7 +367,7 @@ p.name::after {
 }
 
 .contact > h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   margin: 50px 20px;
   align-self: center;
 }
@@ -503,11 +509,12 @@ textarea::placeholder {
 
 footer {
   width: 100vw;
-  min-height: 20vh;
+  min-height: 10vh;
   background: rgba(var(--background_rgb), 0.5);
   border-top: 2px solid var(--shadow);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 5vw;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -519,7 +526,7 @@ footer {
   content: "";
   display: block;
   position: absolute;
-  top: 5vh;
+  top: 10vh;
   left: -15vw;
   background: var(--primary);
   width: max(40vw, 40vh);

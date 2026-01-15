@@ -45,7 +45,7 @@ function updateContent(langData) {
 }
 
 function initializeLanguage() {
-  const lang = localStorage.getItem("language") || "pl";
+  const lang = localStorage.getItem("language") || "en";
   document.documentElement.lang = lang;
   document.querySelector("#language-button").innerHTML =
     "<img src='../images/flags/" +
