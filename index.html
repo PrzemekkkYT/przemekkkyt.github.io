@@ -48,10 +48,10 @@
       </button>
       <nav id="main-menu" class="mobile-nav-hidden">
         <ul>
-          <li><a href="#home" lang-key="home"></a></li>
-          <li><a href="#about-me" lang-key="about_me"></a></li>
-          <li><a href="#projects" lang-key="projects"></a></li>
-          <li><a href="#contact" lang-key="contact"></a></li>
+          <li><a href="#home" lang-key="home">Home</a></li>
+          <li><a href="#about-me" lang-key="about_me">About me</a></li>
+          <li><a href="#projects" lang-key="projects">Projects</a></li>
+          <li><a href="#contact" lang-key="contact">Contact</a></li>
           <li>
             <div id="language-selector" class="lang-selector">
               <button
@@ -83,12 +83,20 @@
         <p class="name">Przemysław<br />Kotw<span>ic</span>a</p>
       </section>
       <section class="about-me back-elements" id="about-me">
-        <h1 lang-key="about_me"></h1>
-        <p lang-key="about_me_description"></p>
+        <h1 lang-key="about_me">About me</h1>
+        <p lang-key="about_me_description">
+          Hi, my name is Przemysław and I am a graduate of the IT Technical
+          School in Bolesławiec. In my free time, I like to spend some time
+          playing computer games, watching something interesting, or having fun
+          with programming. I mostly work in <b>Python</b>, but I also create
+          projects in <b>C#</b>, <b>JavaScript</b>, and <b>Dart</b>. I
+          constantly try to develop my skills and learn new technologies, to not
+          fall behind.
+        </p>
         <hr />
       </section>
       <section class="projects" id="projects">
-        <h1 lang-key="projects"></h1>
+        <h1 lang-key="projects">Projects</h1>
         <a
           href="https://github.com/PrzemekkkYT/Vipper"
           target="_blank"
@@ -96,7 +104,12 @@
         >
           <div>
             <h1>Vipper</h1>
-            <p lang-key="project_vipper_description"></p>
+            <span lang-key="project_vipper_description">
+              My first bigger project written in Python in 2018. It is a
+              multifunctional bot for the Discord platform. It allows, among
+              other things, playing music, creating polls, reading messages from
+              channels using TTS, and many other features.
+            </span>
           </div>
           <img src="./images/projects/vipper.png" alt="Vipper Project Image" />
         </a>
@@ -107,7 +120,13 @@
         >
           <div>
             <h1>NextLoot</h1>
-            <p lang-key="project_nextloot_description"></p>
+            <span lang-key="project_nextloot_description">
+              <h2>Currently in closed beta</h2>
+              A mobile application written in Dart that shows users free games
+              from platforms such as <b>Epic Games</b>, <b>Steam</b>, and
+              <b>GOG</b>. The app is currently only available for
+              <b>Android</b>. An <b>iOS</b> version is also planned.
+            </span>
           </div>
           <img
             src="./images/projects/nextloot.png"
@@ -121,7 +140,12 @@
         >
           <div>
             <h1>Free Gamer</h1>
-            <p lang-key="project_freegamer_description"></p>
+            <span lang-key="project_freegamer_description">
+              The predecessor of the NextLoot app. It is a Discord bot. The
+              project is written in Python and uses the APIs of these stores to
+              provide users with up-to-date information about available
+              promotions.
+            </span>
           </div>
           <img
             src="./images/projects/freegamer.png"
@@ -134,8 +158,11 @@
           class="project"
         >
           <div>
-            <h1 lang-key="project_virtualtour_title"></h1>
-            <p lang-key="project_virtualtour_description"></p>
+            <h1 lang-key="project_virtualtour_title">Virtual tour</h1>
+            <span lang-key="project_virtualtour_description">
+              A project in JavaScript that allows you to generate a virtual tour
+              using 360° photos and a standardized JSON format.
+            </span>
           </div>
           <img
             src="./images/projects/virtual_tour.png"
@@ -149,7 +176,10 @@
         >
           <div>
             <h1>RaftMIDI</h1>
-            <p lang-key="project_raftmidi_description"></p>
+            <span lang-key="project_raftmidi_description">
+              An application written in Python that allows you to automatically
+              play MIDI files on the piano in the game Raft using AutoHotkey.
+            </span>
           </div>
           <img
             src="./images/projects/raftMIDI.jpg"
@@ -163,7 +193,11 @@
         >
           <div>
             <h1>Godot Isometric</h1>
-            <p lang-key="project_godot_isometric_description"></p>
+            <span lang-key="project_godot_isometric_description"
+              >A simple project on the Godot engine created while learning this
+              engine. The program generates an empty isometric world where you
+              can move the map and see terrain generation.</span
+            >
           </div>
           <img
             src="./images/projects/godot_isometric.png"
@@ -172,8 +206,11 @@
         </a>
       </section>
       <section class="contact back-elements" id="contact">
-        <h1 lang-key="contact"></h1>
-        <p lang-key="contact_description"></p>
+        <h1 lang-key="contact">Contact</h1>
+        <p lang-key="contact_description">
+          Do you have any questions? Want to get in touch with me? Send me a
+          message and I will try to reply as soon as possible.
+        </p>
         <div id="contact-main">
           <div id="social">
             <a
@@ -209,6 +246,7 @@
               id="email"
               lang-key="form_email"
               pattern="^\S+@\S+\.\S+$"
+              placeholder="Your email address"
               required
             />
             <input
@@ -216,20 +254,20 @@
               name="subject"
               id="subject"
               lang-key="form_subject"
+              placeholder="Subject"
               required
             />
             <textarea
               name="message"
               id="message"
               lang-key="form_message"
+              placeholder="Message"
               required
             ></textarea>
             <div id="form_bottom">
-              <button
-                type="submit"
-                id="submit-button"
-                lang-key="form_send"
-              ></button>
+              <button type="submit" id="submit-button" lang-key="form_send">
+                Send
+              </button>
             </div>
           </form>
         </div>
@@ -237,7 +275,7 @@
     </main>
     <footer>
       <p handlebars>© {{year}} Przemysław Kotwica</p>
-      <p lang-key="version" handlebars></p>
+      <p lang-key="version" handlebars>Version {{version}}</p>
     </footer>
 
     <script src="https://unpkg.com/@botpoison/browser" async></script>

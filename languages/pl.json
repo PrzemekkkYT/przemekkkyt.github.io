@@ -16,6 +16,5 @@
     "form_subject": "Temat",
     "form_message": "Wiadomość",
     "form_send": "Wyślij",
-    "last_update": "Ostatnia aktualizacja {{last_update}}",
     "version": "Wersja {{version}}"
 }

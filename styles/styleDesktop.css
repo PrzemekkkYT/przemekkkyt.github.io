@@ -313,10 +313,11 @@ p.name::after {
   margin-bottom: 10px;
 }
 
-.project > div > p {
+.project > div > span {
   font-size: 1.5rem;
   line-height: 1.2;
   color: var(--subtext);
+  margin: 1.5rem 0;
 }
 
 .project > img {
