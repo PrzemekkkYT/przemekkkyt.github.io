@@ -1,16 +1,16 @@
 function applyHandlebars(element) {
   element.innerHTML = element.innerHTML.replace(
     "{{year}}",
-    new Date().getFullYear()
+    new Date().getFullYear(),
   );
-  element.innerHTML = element.innerHTML.replace("{{version}}", "v1.3.6");
+  element.innerHTML = element.innerHTML.replace("{{version}}", "v1.3.7");
 }
 
 function handlebars(element, handlebar, value) {
   if (element && handlebar && value) {
     element.textContent = element.textContent.replace(
       `{{${handlebar}}}`,
-      value
+      value,
     );
   } else {
     console.error("Invalid parameters provided to handlebars function.");

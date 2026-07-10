@@ -1,7 +1,7 @@
 {
     "home": "Strona główna",
     "about_me": "O mnie",
-    "about_me_description": "Cześć, nazywam się Przemysław i jestem absolwentem Technikum Informatycznego w Bolesławcu. W wolnym czasie lubię poświęcić chwilę na gry komputerowe, obejrzeć coś ciekawego lub pobawić się programowaniem. Najczęściej pracuję w <b>Pythonie</b>, ale zdarza mi się też tworzyć projekty w <b>C#</b>, <b>JavaScript</b> oraz <b>Dart</b>. Staram się nieustannie rozwijać swoje umiejętności i poznawać nowe technologie, aby nie zostać w tyle.",
+    "about_me_description": "Cześć, nazywam się Przemysław i jestem absolwentem Technikum Informatycznego w Bolesławcu. Obecnie studiuję informatykę w Collegium Witelona w Legnicy. W wolnym czasie lubię poświęcić chwilę na gry komputerowe, obejrzeć coś ciekawego lub pobawić się programowaniem. Najczęściej pracuję w <b>Pythonie</b>, ale zdarza mi się też tworzyć projekty w <b>C#</b>, <b>JavaScript</b> oraz <b>Dart</b>. Staram się nieustannie rozwijać swoje umiejętności i poznawać nowe technologie, aby nie zostać w tyle.",
     "projects": "Projekty",
     "project_vipper_description": "Mój pierwszy większy projekt napisany w Pythonie w 2018 roku. Jest to wielofunkcyjny bot na platformie Discord. Pozwalający m.in. na puszczanie muzyki, tworzenie ankiet, czytanie wiadomości z kanałów dzięki TTS, a także wiele innych funkcji.",
     "project_nextloot_description": "<h2>Obecnie w zamkniętej becie</h2>Aplikacja na telefony napisana w języku Dart, która wyświetla użytkownikom darmówki z platform takich jak <b>Epic Games, Steam</b> czy <b>GOG</b>. Aplikacja jest obecnie dostępna jedynie na system <b>Android</b>. W planach jest również wersja na system <b>iOS</b>.",
@@ -10,6 +10,7 @@
     "project_virtualtour_description": "Projekt w języku JavaScript pozwalający na wygenerowanie wirtualnego spaceru z wykorzystaniem zdjęć 360° i ustandaryzowanego formatu JSON.",
     "project_raftmidi_description": "Aplikacja napisana w Pythonie, która pozwala na automatyczne granie plików MIDI na pianinie w grze Raft za pomocą programu AutoHotkey.",
     "project_godot_isometric_description": "Prosty projekt na silniku Godot stworzony podczas nauki tego silnika. Program generuje pusty izometryczny świat, w którym można przesuwać mapę i zobaczyć generację terenu.",
+    "project_wos2263_description": "Strona internetowa stworzona specjalnie w celu promowania państwa 2263 w grze „Whiteout Survival”. Zawiera najważniejsze informacje o naszym państwie i naszych sojuszach, a także specjalny kalendarz wydarzeń w grze.<br />Strona została stworzona głównie przy użyciu <b>preact</b>, <b>tailwind</b>, <b>wouter</b> oraz <b>vis-timeline</b>.",
     "contact": "Kontakt",
     "contact_description": "Masz jakieś pytania? Chcesz się ze mną skontaktować? Napisz do mnie wiadomość, a postaram się odpowiedzieć tak szybko, jak to możliwe.",
     "form_email": "Twój adres e-mail",
